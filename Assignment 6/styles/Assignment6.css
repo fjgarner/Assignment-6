@@ -1,0 +1,49 @@
+section.addcust
+{
+    visibility: hidden;
+    display: block;
+    overflow: auto;
+    width: 600px;
+}
+
+section.chgshipinfo
+{
+    visibility: hidden;
+    display: block;
+    overflow: auto;
+    width: 600px;
+}
+
+section.delcust
+{
+    visibility: hidden;
+    display: block;
+    overflow: auto;
+    width: 600px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+section.addcust button
+{
+    margin-left: 100px;
+}
+
+section.chgshipinfo button
+{
+    margin-left: 100px;
+}
+
+section.delcust button
+{
+    margin-left: 100px;
+}
+
+#example
+{
+    font-style: italic;
+    color: red;
+}

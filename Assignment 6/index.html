@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment 6</title>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment6.css"/>
+    <script src="js/Assignment6.js"></script>
+</head>
+
+<body>
+    <section id="title">
+    <h1>Assignment 6</h1>
+    <hr>
+    <br>
+        <h2>Input</h2>
+        <select onchange="MenuChoice()" id="Menu">
+            <option>Please select an section</option>
+            <option>Add Customer Information</option>
+            <option>Change Shipping Information</option>
+            <option>Delete Customer Information</option>
+        </select>
+    </section>
+    <hr>
+    <h2>Output</h2>
+        <section id="addcust" class="addcust">
+        <h2>Add Customer Information</h2>
+        <label>Customer ID: </label>
+        <input type="text" id="custid">
+        <label id="example">Customer ID should be 5 uppercase characters</label>
+        <br>
+        <label>Customer Name: </label>
+        <input type="text" id="custname">
+        <br>
+        <label>Customer City: </label>
+        <input type="text" id="custcity">
+        <br>
+        <button onclick="AddCustInfo()" id="addcustinfo">Add Customer Info</button>
+        <hr>
+        <br>
+        <label id="custinfo">Display info here</label>
+    </section>
+    <section id="chgshipinfo" class="chgshipinfo">
+        <h2>Shipping Information</h2>
+        <label>Order Number: </label>
+        <input type="number" id="ordnum">
+        <br>
+        <label>Ship-to Name: </label>
+        <input type="text" id="shiptoname">
+        <br>
+        <label>Ship-to Street Address: </label>
+        <input type="text" id="shiptoaddress">
+        <br>
+        <label>Ship-to City: </label>
+        <input type="text" id="shiptocity">
+        <br>
+        <label>Ship-to Postal Code: </label>
+        <input type="text" id="shiptocode">
+        <br>
+        <button onclick="ChgShip()" id="chgship">Change Shipping Information</button>
+        <hr>
+        <br>
+        <label id="shipinfo">Display info here</label>
+    </section>
+    <section id="delcust" class="delcust">
+        <h2>Delete Customer Information</h2>
+        <label>Customer ID: </label>
+        <input type="text" id="dcustid">
+        <label id="example">Customer ID should be 5 uppercase characters</label>
+        <br>
+        <button onclick="DelCust()" id="dcust">Delete Customer</button>
+        <hr>
+        <br>
+        <label id="delete">Display info here</label>
+    </section>
+    
+    
+
+</body>
+</html>
